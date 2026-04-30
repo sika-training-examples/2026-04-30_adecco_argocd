@@ -1,6 +1,6 @@
 server:
   extraArgs:
-    --insecure
+    - --insecure
   ingress:
     enabled: true
     hostname: argocd.aks.sikademo.com
