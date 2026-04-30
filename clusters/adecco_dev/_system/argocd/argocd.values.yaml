@@ -6,7 +6,8 @@ server:
     ingressClassName: haproxy
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt
-      haproxy.org/server-ssl: "true"
+      haproxy.org/ssl-passthrough: "true"
+      haproxy.org/backend-protocol: "https"
 configs:
   cm:
     url: https://argocd.aks.sikademo.com
