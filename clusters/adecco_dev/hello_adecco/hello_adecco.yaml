@@ -23,3 +23,4 @@ spec:
       valuesObject:
         host: hello-adecco.aks.sikademo.com
         image: ghcr.io/sikalabs/hello-world-server:adecco
+        ingressClassName: haproxy
