@@ -1,4 +1,6 @@
 server:
+  extraArgs:
+    --insecure
   ingress:
     enabled: true
     hostname: argocd.aks.sikademo.com
@@ -6,8 +8,6 @@ server:
     ingressClassName: haproxy
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt
-      haproxy.org/backend-protocol: "https"
-      haproxy.org/ssl-redirect: "true"
 configs:
   cm:
     url: https://argocd.aks.sikademo.com
